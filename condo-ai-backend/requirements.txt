@@ -6,4 +6,4 @@ psycopg2-binary  # Cliente PostgreSQL
 pydantic
 python-dotenv  # Para carregar variáveis de ambiente do .env
 openai
-#
+##
