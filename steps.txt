@@ -1,0 +1,15 @@
+Backend:
+docker run --rm -p 4317:4317 -p 4318:4318 \
+  --name otel-collector otel/opentelemetry-collector-contrib
+
+docker run --name postgres-condo-ai -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -e POSTGRES_DB=condo_ai -p 5432:5432 -d postgres
+source venv/bin/activate
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+Frontend:
+npm start
+
+
+
+curl -X POST "https://didactic-space-funicular-jjjp5q74pqg72gvx-8000.app.github.dev/condominios/" -H "Content-Type: application/json" -d '{"nome": "Condomínio Exemplo"}' '{"endereco": "Condomínio Exemplo"}'
+curl -v https://didactic-space-funicular-jjjp5q74pqg72gvx-8000.app.github.dev:4317
