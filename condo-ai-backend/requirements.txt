@@ -8,4 +8,4 @@ python-dotenv  # Para carregar variáveis de ambiente do .env
 openai
 ##
 
-#
+#123
