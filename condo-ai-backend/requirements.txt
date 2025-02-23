@@ -1,11 +1,8 @@
 fastapi
-uvicorn
-sqlalchemy
-alembic
-psycopg2-binary  # Cliente PostgreSQL
-pydantic
-python-dotenv  # Para carregar variáveis de ambiente do .env
-openai
-##
-
-#123
+#uvicorn
+#sqlalchemy
+#alembic
+#psycopg2-binary  # Cliente PostgreSQL
+#pydantic
+#python-dotenv  # Para carregar variáveis de ambiente do .env
+#openai
